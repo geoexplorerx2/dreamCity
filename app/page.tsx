@@ -27,7 +27,7 @@ export default function Home() {
   
 
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen border-3 border-[blue]">
       <HomePageComp />
     </main>
   )

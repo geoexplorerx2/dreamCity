@@ -1,0 +1,1 @@
+export type {default as MainMenuItemType } from './MainMenuItemType'

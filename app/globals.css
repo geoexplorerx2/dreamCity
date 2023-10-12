@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@layer base {
+  html {
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+  background: linear-gradient(84deg, #09101E 0%, #0C1C2B 73.44%);
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+
+.gray-gradient {
+  background: linear-gradient(139deg, #6E7A8A 0%, rgba(110, 122, 138, 0.00) 100%);
+  backdrop-filter: blur(20px);
+}
+
+.red-gradient-bg {
+  background: linear-gradient(131deg, #D33535 0%, #50252F 100%);
+}
+
+.glassy-bg {
+  border-radius: 20px;
+  background: linear-gradient(139deg, #6E7A8A 0%, rgba(110, 122, 138, 0.00) 100%);
+  backdrop-filter: blur(20px);
+}
+
+
+/* The Styling of the pagination of the Characters slider on the home page */
+
+#characters-slider .swiper-pagination-bullet-active {
+  background: #C3272E !important;
+}
+
+#characters-slider .swiper-pagination-bullet {
+  background: rgba(195, 39, 46, 0.50);
+}
+
+.fade-in {
+  animation: fadeIn 1.5s ease-in; 
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes fadeIn {  
+  from {  
+      opacity:0;  
+  }  
+
+  to {  
+      opacity:1;  
+  }  
+}
+
+
+/* hiding the scrollbar class */
+.no-scroll-bar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scroll-bar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}

@@ -5,6 +5,8 @@ import LogoMoile from "@/assets/logos/logo-mobile-footer.svg";
 import { items } from "@/app/utils/lib/data";
 import SocialMedia from "@/assets/Icons/socialMedia.svg";
 import Instagram from "@/assets/Icons/instagram.svg";
+import Twitter from "@/assets/Icons/twitter.svg";
+import Youtube from "@/assets/Icons/Youtube.svg";
 const Footer: FC = () => {
   return (
     <div className="w-full bg-gradient-to-r from-[#0C1C2B] to-[#09101E]">
@@ -32,6 +34,8 @@ const Footer: FC = () => {
         </div>
         <div className="w-full flex justify-center mt-11 mb-6 lg:mb-6">
           <Instagram />
+          <Twitter />
+          <Youtube />
           <SocialMedia />
         </div>
       </div>

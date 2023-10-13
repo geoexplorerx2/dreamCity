@@ -3,6 +3,7 @@ import React, { FC } from "react";
 import { UiImage } from "@/app/utils/lib";
 import Button from "@/app/Components/Buttons/Button";
 import Play from "@/assets/Icons/Play.svg";
+
 const Fade = require("react-reveal/Fade");
 
 const HowToStorySection: FC = () => {
@@ -21,7 +22,7 @@ const HowToStorySection: FC = () => {
                   }
                   Icon={<Play className="text-gray ml-[0.2rem]" />}
                   IconStyle={`flex justify-center items-center bg-white w-4 h-4 rounded-full ml-3`}
-                  link={`https://youtu.be/nz7bB-QtSgY?si=Q8QD5-mW1G_LmHaY`}
+                  link={`https://www.youtube.com/watch?v=nz7bB-QtSgY`}
                 />
               </div>
               <div className="">
@@ -32,6 +33,7 @@ const HowToStorySection: FC = () => {
                   }
                   Icon={<Play className="text-primary ml-[0.1rem]" />}
                   IconStyle={`flex justify-center items-center bg-white w-4 h-4 rounded-full ml-3`}
+                  link={`#`}
                 />
               </div>
             </div>
@@ -89,6 +91,7 @@ const HowToStorySection: FC = () => {
                     }
                     Icon={<Play className="text-gray ml-[0.2rem]" />}
                     IconStyle={`flex justify-center items-center bg-white w-4 h-4 rounded-full ml-3`}
+                    link={`https://www.youtube.com/watch?v=nz7bB-QtSgY`}
                   />
                 </div>
                 <div className="">

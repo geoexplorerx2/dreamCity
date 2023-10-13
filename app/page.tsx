@@ -1,11 +1,10 @@
-
-import { Metadata } from 'next'
-import Image from 'next/image'
-import HomePageComp from './Components/Pages/HomePage/HomePageComp'
+import { Metadata } from "next";
+import Image from "next/image";
+import HomePageComp from "./Components/Pages/HomePage/HomePageComp";
 
 export const metadata: Metadata = {
-  title: 'Dream City',
-  description: 'Dream City Description', 
+  title: "Dream City",
+  description: "Dream City Description",
   robots: {
     index: true,
     follow: true,
@@ -14,21 +13,18 @@ export const metadata: Metadata = {
       index: true,
       follow: true,
       noimageindex: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
     },
   },
-}
- 
+};
 
+// Index
 export default function Home() {
-
-  
-
   return (
     <main className="min-h-screen">
       <HomePageComp />
     </main>
-  )
+  );
 }

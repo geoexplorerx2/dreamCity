@@ -7,6 +7,8 @@ import SocialMedia from "@/assets/Icons/socialMedia.svg";
 import Instagram from "@/assets/Icons/instagram.svg";
 import Twitter from "@/assets/Icons/twitter.svg";
 import Youtube from "@/assets/Icons/Youtube.svg";
+import FaceBook from "@/assets/Icons/facebook.svg";
+import Link from "next/link";
 const Footer: FC = () => {
   return (
     <div className="w-full bg-gradient-to-r from-[#0C1C2B] to-[#09101E]">
@@ -33,10 +35,28 @@ const Footer: FC = () => {
           </ul>
         </div>
         <div className="w-full flex justify-center mt-11 mb-6 lg:mb-6">
-          <Instagram />
-          <Twitter />
-          <Youtube />
-          <SocialMedia />
+          <ul className="w-full justify-center list-none flex">
+            <li>
+              <Link href="https://www.instagram.com/dreamcitystories/">
+                <Instagram />
+              </Link>
+            </li>
+            <li>
+              <Link href="https://www.youtube.com/channel/UC2RViP6ZOCgJ7n9k_ocDCEw">
+                <Youtube />
+              </Link>
+            </li>
+            <li>
+              <Link href="https://www.facebook.com/dreamcitystories">
+                <FaceBook />
+              </Link>
+            </li>
+            <li>
+              <Link href="https://twitter.com/dreamcitygame">
+                <Twitter />
+              </Link>
+            </li>
+          </ul>
         </div>
       </div>
     </div>

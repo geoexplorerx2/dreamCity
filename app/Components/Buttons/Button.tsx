@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import Link from "next/link";
+
 interface ButtonProps {
   ButtonStyle?: string;
   Name: string;
@@ -8,16 +8,17 @@ interface ButtonProps {
   IconStyle?: string;
   link?: any;
 }
+
 const Button: FC<ButtonProps> = (props) => {
   const { ButtonStyle, Name, NameStyle, Icon, IconStyle, link } = props;
   return (
     <>
-      <Link href={`${link}`}>
+      <a href={`${link}`} target="_blank" rel="noopener noreferrer">
         <button className={ButtonStyle}>
           <span className={NameStyle}>{Name}</span>
           {Icon && <span className={IconStyle}>{Icon}</span>}
         </button>
-      </Link>
+      </a>
     </>
   );
 };

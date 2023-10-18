@@ -85,7 +85,9 @@ const HeroSection: FC = () => {
                 />
               </div>
               <div className="w-full flex justify-center mt-[50px]">
-                <ArrowDownIcon />
+                <a href="#nextSecion">
+                  <ArrowDownIcon />
+                </a>
               </div>
             </Fade>
           </div>

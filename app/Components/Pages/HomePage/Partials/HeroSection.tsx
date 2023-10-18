@@ -54,7 +54,7 @@ const HeroSection: FC = () => {
               </Fade>
             </div>
             <Fade left cascade>
-              <div className="ml-5 lg:ml-20 w-[390px] flex flex-col justify-between mt-5 lg:mt-20 space-y-4">
+              <div className="ml-5 lg:ml-20 w-[350px] flex flex-col justify-between mt-5 lg:mt-20 space-y-4">
                 <Button
                   Name={"WATCH TRAILER"}
                   ButtonStyle={

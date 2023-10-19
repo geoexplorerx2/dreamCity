@@ -70,9 +70,9 @@ const HeroSection: FC = () => {
                   </div>
                   <div className="mb-1 mx-0 md:mb-0 md:mx-2">
                     <Button
-                      Name={"Download"}
+                      Name={"Download for windows"}
                       ButtonStyle={
-                        "px-5 py-4 flex items-center rounded-3xl text-sm font-medium bg-gradient-to-r from-[#6E7A8A] to-[rgba(0,0,0,0.5)]"
+                        "w-[230px] px-5 py-4 flex items-center rounded-3xl text-sm font-medium bg-gradient-to-r from-[#6E7A8A] to-[rgba(0,0,0,0.5)]"
                       }
                       Icon={<Windows className="text-gray" />}
                       IconStyle={`flex justify-center items-center bg-white w-[20px] h-[20px] rounded-full ml-3`}
@@ -81,11 +81,13 @@ const HeroSection: FC = () => {
                   </div>
                   <div className="mb-1 mx-0 md:mb-0 md:mx-0">
                     <Button
-                      Name={"Download"}
+                      Name={"Download for MacOS"}
                       ButtonStyle={
-                        "px-5 py-4 flex items-center rounded-3xl text-sm font-medium bg-gradient-to-r from-[#6E7A8A] to-[rgba(0,0,0,0.5)]"
+                        "w-[220px] px-5 py-4 flex items-center rounded-3xl text-sm font-medium bg-gradient-to-r from-[#6E7A8A] to-[rgba(0,0,0,0.5)]"
                       }
-                      Icon={<MacOS className="text-gray w-[20px] h-[20px] rounded-full" />}
+                      Icon={
+                        <MacOS className="text-gray w-[20px] h-[20px] rounded-full" />
+                      }
                       IconStyle={`flex justify-center items-center bg-white w-[20px] h-[20px] rounded-full ml-3`}
                       link={`https://cloud.dreamcitystories.com/DreamCity-1.0-mac.zip`}
                     />

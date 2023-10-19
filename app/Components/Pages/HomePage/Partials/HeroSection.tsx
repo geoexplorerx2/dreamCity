@@ -62,7 +62,7 @@ const HeroSection: FC = () => {
             </div>
             <Fade left cascade>
               <div className="ml-5 lg:ml-20 w-[350px] justify-between mt-5 lg:mt-20 space-y-4">
-                <div className="mb-1 block md:flex ">
+                <div className="mb-1 block md:flex">
                   <div className="mb-1 mx-0 md:mb-0 md:mx-0">
                     <Button
                       Name={"WATCH TRAILER"}
@@ -78,14 +78,10 @@ const HeroSection: FC = () => {
                     onClick={toggle_demo}
                     className="mb-1 mx-0 md:mb-0 md:mx-2 w-[150px] cursor-pointer px-5 py-4 flex items-center rounded-3xl text-sm font-medium bg-gradient-to-r from-[#6E7A8A] to-[rgba(0,0,0,0.5)]"
                   >
-                    {show ? (
-                      <>
-                        <ClosBtn className={`w-[20px]`} />
-                      </>
-                    ) : (
-                      "Try Our Demo"
-                    )}
+                    Try Our Demo
                   </div>
+                </div>
+                <div className="mb-1 block md:flex">
                   <div
                     className={`mb-1 mx-0 md:mb-0 md:mx-2 ${
                       show ? "block" : "hidden"

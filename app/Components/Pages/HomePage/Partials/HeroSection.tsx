@@ -85,7 +85,7 @@ const HeroSection: FC = () => {
                       ButtonStyle={
                         "px-5 py-4 flex items-center rounded-3xl text-sm font-medium bg-gradient-to-r from-[#6E7A8A] to-[rgba(0,0,0,0.5)]"
                       }
-                      Icon={<MacOS className="text-gray" />}
+                      Icon={<MacOS className="text-gray w-[20px] h-[20px] rounded-full" />}
                       IconStyle={`flex justify-center items-center bg-white w-[20px] h-[20px] rounded-full ml-3`}
                       link={`https://cloud.dreamcitystories.com/DreamCity-1.0-mac.zip`}
                     />

@@ -1,5 +1,5 @@
 "use client";
-import React, { FC } from "react";
+import React, { FC, useState } from "react";
 import Button from "@/app/Components/Buttons/Button";
 import Play from "@/assets/Icons/Play.svg";
 import { UiFade, UiImage } from "@/app/utils/lib";
@@ -10,8 +10,14 @@ import useIsDomLoaded from "@/app/utils/hooks/useIsDomLoaded";
 import ArrowDownIcon from "@/assets/Icons/arrow-down.svg";
 import Windows from "@/assets/Icons/windows.svg";
 import MacOS from "@/assets/Icons/mac.svg";
+import ClosBtn from "@/assets/Icons/closeBtn.svg";
+import Image from "next/image";
 const HeroSection: FC = () => {
   const isDomLoaded = useIsDomLoaded();
+  const [show, setShow] = useState<any>(false);
+  const toggle_demo = () => {
+    setShow(!show);
+  };
   return (
     <div
       className={`w-full min-h-[774px] lg:min-h-[649px] max-h-[1000px] lg:aspect-video relative `}
@@ -68,7 +74,23 @@ const HeroSection: FC = () => {
                       link={`https://youtu.be/C_bo2bj0bjA?si=0dXo1e2kCCAFLNip`}
                     />
                   </div>
-                  <div className="mb-1 mx-0 md:mb-0 md:mx-2">
+                  <div
+                    onClick={toggle_demo}
+                    className="mb-1 mx-0 md:mb-0 md:mx-2 w-[150px] cursor-pointer px-5 py-4 flex items-center rounded-3xl text-sm font-medium bg-gradient-to-r from-[#6E7A8A] to-[rgba(0,0,0,0.5)]"
+                  >
+                    {show ? (
+                      <>
+                        <ClosBtn className={`w-[20px]`} />
+                      </>
+                    ) : (
+                      "Try Our Demo"
+                    )}
+                  </div>
+                  <div
+                    className={`mb-1 mx-0 md:mb-0 md:mx-2 ${
+                      show ? "block" : "hidden"
+                    }`}
+                  >
                     <Button
                       Name={"Download for windows"}
                       ButtonStyle={
@@ -79,7 +101,11 @@ const HeroSection: FC = () => {
                       link={`https://cloud.dreamcitystories.com/DreamCity-1.0-win.zip`}
                     />
                   </div>
-                  <div className="mb-1 mx-0 md:mb-0 md:mx-0">
+                  <div
+                    className={`mb-1 mx-0 md:mb-0 md:mx-0 ${
+                      show ? "block" : "hidden"
+                    }`}
+                  >
                     <Button
                       Name={"Download for MacOS"}
                       ButtonStyle={

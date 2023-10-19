@@ -76,7 +76,7 @@ const HeroSection: FC = () => {
                       }
                       Icon={<Windows className="text-gray" />}
                       IconStyle={`flex justify-center items-center bg-white w-[20px] h-[20px] rounded-full ml-3`}
-                      link={`https://youtu.be/C_bo2bj0bjA?si=0dXo1e2kCCAFLNip`}
+                      link={`https://cloud.dreamcitystories.com/DreamCity-1.0-win.zip`}
                     />
                   </div>
                   <div className="mb-1 mx-0 md:mb-0 md:mx-0">
@@ -87,7 +87,7 @@ const HeroSection: FC = () => {
                       }
                       Icon={<MacOS className="text-gray" />}
                       IconStyle={`flex justify-center items-center bg-white w-[20px] h-[20px] rounded-full ml-3`}
-                      link={`https://youtu.be/C_bo2bj0bjA?si=0dXo1e2kCCAFLNip`}
+                      link={`https://cloud.dreamcitystories.com/DreamCity-1.0-mac.zip`}
                     />
                   </div>
                 </div>

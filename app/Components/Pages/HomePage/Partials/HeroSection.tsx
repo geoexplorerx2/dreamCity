@@ -8,7 +8,8 @@ import KickstarterLogo from "@/assets/Icons/KickStarterLogo.svg";
 import PatreonLogo from "@/assets/Icons/PatreonLogo.svg";
 import useIsDomLoaded from "@/app/utils/hooks/useIsDomLoaded";
 import ArrowDownIcon from "@/assets/Icons/arrow-down.svg";
-
+import Windows from "@/assets/Icons/windows.svg";
+import MacOS from "@/assets/Icons/mac.svg";
 const HeroSection: FC = () => {
   const isDomLoaded = useIsDomLoaded();
   return (
@@ -54,35 +55,66 @@ const HeroSection: FC = () => {
               </Fade>
             </div>
             <Fade left cascade>
-              <div className="ml-5 lg:ml-20 w-[350px] flex flex-col justify-between mt-5 lg:mt-20 space-y-4">
-                <Button
-                  Name={"WATCH TRAILER"}
-                  ButtonStyle={
-                    "w-48 px-5 py-4 flex items-center rounded-3xl text-sm font-medium bg-gradient-to-r from-[#6E7A8A] to-[rgba(0,0,0,0.5)]"
-                  }
-                  Icon={<Play className="text-gray ml-[0.2rem]" />}
-                  IconStyle={`flex justify-center items-center bg-white w-4 h-4 rounded-full ml-3`}
-                  link={`https://youtu.be/C_bo2bj0bjA?si=0dXo1e2kCCAFLNip`}
-                />
-
-                <Button
-                  Name={"Support Us On "}
-                  ButtonStyle={
-                    "flex justify-center px-5 py-4 flex items-center rounded-3xl text-sm font-medium red-gradient-bg  whitespace-nowrap w-min"
-                  }
-                  Icon={<KickstarterLogo />}
-                  IconStyle={`flex justify-center items-center  rounded-full ml-3`}
-                  link={`#`}
-                />
-                <Button
-                  Name={"Support Us On "}
-                  ButtonStyle={
-                    "flex justify-center px-5 py-4 flex items-center rounded-3xl text-sm font-medium red-gradient-bg  whitespace-nowrap w-min"
-                  }
-                  Icon={<PatreonLogo />}
-                  IconStyle={`flex justify-center items-center  rounded-full ml-3`}
-                  link={`https://www.patreon.com/Feedgames`}
-                />
+              <div className="ml-5 lg:ml-20 w-[350px] justify-between mt-5 lg:mt-20 space-y-4">
+                <div className="mb-1 block md:flex ">
+                  <div className="mb-1 mx-0 md:mb-0 md:mx-0">
+                    <Button
+                      Name={"WATCH TRAILER"}
+                      ButtonStyle={
+                        "w-48 px-5 py-4 flex items-center rounded-3xl text-sm font-medium bg-gradient-to-r from-[#6E7A8A] to-[rgba(0,0,0,0.5)]"
+                      }
+                      Icon={<Play className="text-gray ml-[0.2rem]" />}
+                      IconStyle={`flex justify-center items-center bg-white w-[20px] h-[20px] rounded-full ml-3`}
+                      link={`https://youtu.be/C_bo2bj0bjA?si=0dXo1e2kCCAFLNip`}
+                    />
+                  </div>
+                  <div className="mb-1 mx-0 md:mb-0 md:mx-2">
+                    <Button
+                      Name={"Download for windows"}
+                      ButtonStyle={
+                        "w-[230px] px-5 py-4 flex items-center rounded-3xl text-sm font-medium bg-gradient-to-r from-[#6E7A8A] to-[rgba(0,0,0,0.5)]"
+                      }
+                      Icon={<Windows className="text-gray" />}
+                      IconStyle={`flex justify-center items-center bg-white w-[20px] h-[20px] rounded-full ml-3`}
+                      link={`https://cloud.dreamcitystories.com/DreamCity-1.0-win.zip`}
+                    />
+                  </div>
+                  <div className="mb-1 mx-0 md:mb-0 md:mx-0">
+                    <Button
+                      Name={"Download for MacOS"}
+                      ButtonStyle={
+                        "w-[220px] px-5 py-4 flex items-center rounded-3xl text-sm font-medium bg-gradient-to-r from-[#6E7A8A] to-[rgba(0,0,0,0.5)]"
+                      }
+                      Icon={
+                        <MacOS className="text-gray w-[20px] h-[20px] rounded-full" />
+                      }
+                      IconStyle={`flex justify-center items-center bg-white w-[20px] h-[20px] rounded-full ml-3`}
+                      link={`https://cloud.dreamcitystories.com/DreamCity-1.0-mac.zip`}
+                    />
+                  </div>
+                </div>
+                <div className="mb-1">
+                  <Button
+                    Name={"Support Us On "}
+                    ButtonStyle={
+                      "flex justify-center px-5 py-4 flex items-center rounded-3xl text-sm font-medium red-gradient-bg  whitespace-nowrap w-min"
+                    }
+                    Icon={<KickstarterLogo />}
+                    IconStyle={`flex justify-center items-center  rounded-full ml-3`}
+                    link={`#`}
+                  />
+                </div>
+                <div>
+                  <Button
+                    Name={"Support Us On "}
+                    ButtonStyle={
+                      "flex justify-center px-5 py-4 flex items-center rounded-3xl text-sm font-medium red-gradient-bg  whitespace-nowrap w-min"
+                    }
+                    Icon={<PatreonLogo />}
+                    IconStyle={`flex justify-center items-center  rounded-full ml-3`}
+                    link={`https://www.patreon.com/Feedgames`}
+                  />
+                </div>
               </div>
               <div className="w-full flex justify-center mt-[50px]">
                 <a href="#nextSecion">

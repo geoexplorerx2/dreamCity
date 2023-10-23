@@ -3,11 +3,10 @@ import { UiImage } from "@/app/utils/lib";
 import Logo from "@/assets/Icons/Logo.svg";
 import LogoMoile from "@/assets/logos/logo-mobile-footer.svg";
 import { items } from "@/app/utils/lib/data";
-import SocialMedia from "@/assets/Icons/socialMedia.svg";
-import Instagram from "@/assets/Icons/instagram.svg";
-import Twitter from "@/assets/Icons/twitter.svg";
-import Youtube from "@/assets/Icons/Youtube.svg";
-import FaceBook from "@/assets/Icons/facebook.svg";
+import Insta from '@/assets/SocialMedia/instagram.svg'
+import Youtube from '@/assets/SocialMedia/youtube.svg'
+import Twitter from '@/assets/SocialMedia/twitter.svg'
+import Facebook from '@/assets/SocialMedia/facebook.svg'
 import Link from "next/link";
 const Footer: FC = () => {
   return (
@@ -34,26 +33,26 @@ const Footer: FC = () => {
             )}
           </ul>
         </div>
-        <div className="w-full flex justify-center mt-11 mb-6 lg:mb-6 hidden">
+        <div className="w-full flex justify-center mt-11 mb-6 lg:mb-6">
           <ul className="w-full justify-center list-none flex">
             <li>
               <Link href="https://www.instagram.com/dreamcitystories/">
-                <Instagram />
+                <Insta />
               </Link>
             </li>
             <li>
               <Link href="https://www.youtube.com/channel/UC2RViP6ZOCgJ7n9k_ocDCEw">
-                <Youtube />
+                <Youtube/>
               </Link>
             </li>
             <li>
               <Link href="https://www.facebook.com/dreamcitystories">
-                <FaceBook />
+                <Facebook/>
               </Link>
             </li>
             <li>
               <Link href="https://twitter.com/dreamcitygame">
-                <Twitter />
+                <Twitter/>
               </Link>
             </li>
           </ul>

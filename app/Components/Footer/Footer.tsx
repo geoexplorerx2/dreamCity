@@ -34,7 +34,7 @@ const Footer: FC = () => {
           </ul>
         </div>
         <div className="w-full flex justify-center mt-11 mb-6 lg:mb-6">
-          <ul className="w-full justify-center list-none flex">
+          <ul className="w-[15%] list-none flex justify-between">
             <li>
               <Link href="https://www.instagram.com/dreamcitystories/">
                 <Insta />
